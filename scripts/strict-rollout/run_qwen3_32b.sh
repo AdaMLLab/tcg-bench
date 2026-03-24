@@ -1,0 +1,14 @@
+python src/main.py \
+    --model "qwen/qwen3-32b" \
+    --language "en" \
+    --opponent "rollout" \
+    --parse_mode "strict" \
+    --rollout_count "10" \
+    --num_batches "10" \
+    --games_per_batch "1" \
+    --add_rules \
+    --add_cards \
+    --agent_llm_append_cards \
+    --full_deck \
+    --seed 42 \
+    --log_level INFO
